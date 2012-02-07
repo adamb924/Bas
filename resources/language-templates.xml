@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-templates xmlns="/bas/language-template">
+    <language-template>
+        <name lang="fa">انگلیسی</name>
+        <name lang="en">English</name>
+        <text-direction>LTR</text-direction>
+        <default-font>Linux Biolinum</default-font>
+        <iso>eng</iso>
+    </language-template>
+    <language-template>
+        <name lang="fa">دری</name>
+        <name lang="en">Dari</name>
+        <text-direction>RTL</text-direction>
+        <default-font>Scheherazade</default-font>
+        <iso>prs</iso>
+    </language-template>
+    <language-template>
+        <name lang="fa">اشکاشمی</name>
+        <name lang="en">Ishkashimi</name>
+        <text-direction>RTL</text-direction>
+        <default-font>Scheherazade</default-font>
+        <iso>isk</iso>
+    </language-template>
+</language-templates>

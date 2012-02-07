@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/left-active.png</file>
+        <file>resources/left-pressed.png</file>
+        <file>resources/right-active.png</file>
+        <file>resources/right-pressed.png</file>
+        <file>resources/left-inactive.png</file>
+        <file>resources/right-inactive.png</file>
+        <file>resources/nopicture.png</file>
+        <file>translations/bas_fa.qm</file>
+        <file>resources/book-templates.xml</file>
+        <file>resources/language-templates.xml</file>
+        <file>resources/layout-templates.xml</file>
+        <file>resources/page-templates.xml</file>
+    </qresource>
+</RCC>

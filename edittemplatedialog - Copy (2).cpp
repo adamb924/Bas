@@ -1,0 +1,3 @@
+#include "edittemplatedialog.h"
+
+

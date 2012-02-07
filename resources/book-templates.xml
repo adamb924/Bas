@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book-templates xmlns="/bas/book-template">
+    <book-template name="alphabet book" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب الفبا به اندزه A5</long-name>
+        <long-name lang="en">An A5-sized alphabet book</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+            <page layout-template="blank"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="alphabet book letter display page"/>
+        </middle-matter>
+        <back-matter>
+            <filler-pages-here/>
+            <page layout-template="dense text"/>
+        </back-matter>
+    </book-template>
+    <book-template name="narrative consistent pictures" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب به اندزه A5، با متن و یک عکس در یک‌جا در هر سغحه</long-name>
+        <long-name lang="en">An A5-sized book with text and a picture on every page, where the picture is always in the same place</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="graphic text"/>
+        </middle-matter>
+        <back-matter>
+            <page layout-template="dense text"/>
+        </back-matter>
+    </book-template>
+    <book-template name="narrative varied pictures" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب به اندزه A5، با متن و یک عکس در هر سغحه  در جاهای مختلف</long-name>
+        <long-name lang="en">A page with one graphic on every page, in different positions</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="graphic text"/>
+            <page layout-template="text graphic"/>
+            <page layout-template="text graphic text"/>
+        </middle-matter>
+        <back-matter>
+            <page layout-template="dense text"/>
+        </back-matter>
+    </book-template>
+    <book-template name="narrative alternating pictures" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب به اندزه A5، با متن و یک عکس در هر سغحه  در جاهای متناوب</long-name>
+        <long-name lang="en">A page with one graphic on every page, in alternating positions</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+            <page layout-template="blank"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="graphic text"/>
+            <page layout-template="text graphic"/>
+            <page layout-template="text graphic"/>
+            <page layout-template="graphic text"/>
+        </middle-matter>
+        <back-matter>
+            <page layout-template="dense text"/>
+        </back-matter>
+    </book-template>
+    <book-template name="Level A/B Reader (A5)" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب به اندزه A5، برای خواننده​های در منزل اول یا دوم</long-name>
+        <long-name lang="en">Level A/B Reader in A5 Format</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+            <page layout-template="blank"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="text graphic"/>
+        </middle-matter>
+        <back-matter/>
+    </book-template>
+    <book-template name="Level C/D Reader (A5)" page-template="a5 plain">
+        <long-name lang="fa">یک کتاب به اندزه A5، برای خواننده​های در منزل سوم یا چهارم</long-name>
+        <long-name lang="en">Level C/D Reader in A5 Format</long-name>
+        <front-matter>
+            <page layout-template="title page with graphic"/>
+            <page layout-template="blank"/>
+        </front-matter>
+        <middle-matter>
+            <page layout-template="graphic text"/>
+            <page layout-template="text graphic"/>
+            <page layout-template="text graphic"/>
+            <page layout-template="graphic text"/>
+        </middle-matter>
+        <back-matter/>
+    </book-template>
+</book-templates>

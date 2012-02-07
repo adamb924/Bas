@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--all dimensions are in millimeters-->
+<page-templates xmlns="/bas/page-template">
+    <page-template name="a5 van-de-graaf">
+        <long-name lang="fa">کاغذ A5، با حاشیه مطابق نطر Van de Graaf</long-name>
+        <long-name lang="en">A5 paper with margins set according to the Van de Graaf page canon</long-name>
+        <width>148</width>
+        <height>210</height>
+        <header>10</header>
+        <footer>10</footer>
+        <margins side="right">
+            <left-margin>16.44</left-margin>
+            <right-margin>32.89</right-margin>
+            <top-margin>23.33</top-margin>
+            <bottom-margin>46.67</bottom-margin>
+        </margins>
+        <margins side="left">
+            <left-margin>32.89</left-margin>
+            <right-margin>16.44</right-margin>
+            <top-margin>23.33</top-margin>
+            <bottom-margin>46.67</bottom-margin>
+        </margins>
+    </page-template>
+    <page-template name="a5 plain" is-half-of="a4 plain">
+        <long-name lang="fa">کاغذ A5، با حاشیه ۲ سانتی</long-name>
+        <long-name lang="en">A5 paper with margins set to 2cm</long-name>
+        <width>148</width>
+        <height>210</height>
+        <header>10</header>
+        <footer>10</footer>
+        <margins side="right">
+            <left-margin>20</left-margin>
+            <right-margin>20</right-margin>
+            <top-margin>20</top-margin>
+            <bottom-margin>20</bottom-margin>
+        </margins>
+        <margins side="left">
+            <left-margin>20</left-margin>
+            <right-margin>20</right-margin>
+            <top-margin>20</top-margin>
+            <bottom-margin>20</bottom-margin>
+        </margins>
+    </page-template>
+    <page-template name="a4 plain">
+        <long-name lang="fa">کاغذ A4، با حاشیه ۲ سانتی</long-name>
+        <long-name lang="en">A4 paper with margins set to 2cm</long-name>
+        <width>210</width>
+        <height>297</height>
+        <header>10</header>
+        <footer>10</footer>
+        <margins side="right">
+            <left-margin>20</left-margin>
+            <right-margin>20</right-margin>
+            <top-margin>20</top-margin>
+            <bottom-margin>20</bottom-margin>
+        </margins>
+        <margins side="left">
+            <left-margin>20</left-margin>
+            <right-margin>20</right-margin>
+            <top-margin>20</top-margin>
+            <bottom-margin>20</bottom-margin>
+        </margins>
+    </page-template>
+</page-templates>

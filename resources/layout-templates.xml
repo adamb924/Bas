@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout-templates xmlns="/bas/layout-template">
+    <layout-template name="all text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با تنها متن</long-name>
+        <long-name lang="en">A page with just text</long-name>
+        <text-block-layout vertical-position="0" style="font-size:16px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+    </layout-template>
+    <layout-template name="blank" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه خالی</long-name>
+        <long-name lang="en">A blank page</long-name>
+    </layout-template>
+    <layout-template name="header and simple text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با یک انوان و متن</long-name>
+        <long-name lang="en">A page with a header and simple text</long-name>
+        <text-block-layout vertical-position="0" style="font-size:16px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="10" style="font-size:12px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+    </layout-template>
+    <layout-template name="dense text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با متن خرد</long-name>
+        <long-name lang="en">A page with densely set text</long-name>
+        <text-block-layout vertical-position="0" style="font-size:12px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+    </layout-template>
+    <layout-template name="two text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با دو جا برای متن</long-name>
+        <long-name lang="en">A page with two blocks of text</long-name>
+        <text-block-layout vertical-position="0" style="font-size:12px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="100" style="font-size:16px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+    </layout-template>
+    <layout-template name="graphic text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با یک عکس در بالا، و متن در پایین</long-name>
+        <long-name lang="en">A page with one graphic on top, and text</long-name>
+        <text-block-layout vertical-position="100" style="font-size:24px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <graphic-layout vertical-position="0" height="90" width="90"/>
+    </layout-template>
+    <layout-template name="text graphic" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با متن در بالا، و یک عکس در پایین</long-name>
+        <long-name lang="en">A page with text on top, and then a graphic</long-name>
+        <text-block-layout vertical-position="0" style="font-size:24px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <graphic-layout vertical-position="80" height="90" width="90"/>
+    </layout-template>
+    <layout-template name="text graphic text" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه با دو جا برای متن، و در میان یک عکس </long-name>
+        <long-name lang="en">A page with text and a graphic in the middle</long-name>
+        <text-block-layout vertical-position="0" style="font-size:24px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="120" style="font-size:24px;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Write text here</default-text>
+        </text-block-layout>
+        <graphic-layout vertical-position="60" height="50" width="50"/>
+    </layout-template>
+    <layout-template name="title page with graphic" page-template="a5 plain">
+        <long-name lang="fa">یک سحفۀ انوانی با یک عکس </long-name>
+        <long-name lang="en">A title page with a large title and a graphic</long-name>
+        <text-block-layout vertical-position="0" style="font-size:48px;text-align:center;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Title</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="40" style="font-size:18px;text-align:center;">
+            <default-text lang="fa">نویسنده</default-text>
+            <default-text lang="en">Author</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="55" style="font-size:18px;text-align:center;">
+            <default-text lang="fa">اینجا متن بنوسید</default-text>
+            <default-text lang="en">Byline</default-text>
+        </text-block-layout>
+        <graphic-layout vertical-position="80" height="90" width="90"/>
+    </layout-template>
+    <layout-template name="alphabet book letter display page" page-template="a5 plain">
+        <long-name lang="fa">یک سحفه برای نشان یک حرف</long-name>
+        <long-name lang="en">A page for displaying an alphabet page</long-name>
+        <text-block-layout vertical-position="100" style="font-size:60px;text-align:center;">
+            <default-text lang="fa">ب ب‍</default-text>
+            <default-text lang="en">E  e</default-text>
+        </text-block-layout>
+        <text-block-layout vertical-position="130" style="font-size:32px;text-align:center;">
+            <default-text lang="fa">لغت مثلی</default-text>
+            <default-text lang="en">Example word</default-text>
+        </text-block-layout>
+        <graphic-layout vertical-position="0" height="90" width="90"/>
+    </layout-template>
+</layout-templates>
