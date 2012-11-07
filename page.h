@@ -25,7 +25,7 @@ class Page : public QGraphicsScene
     Q_OBJECT
 
 public:
-    Page(Book *pBook, LayoutTemplate *layoutTemplate, Book::Side s, LanguageTemplate *lgTemplate, QObject *parent = 0);
+    Page(Book *book, LayoutTemplate *layoutTemplate, Book::Side s, LanguageTemplate *lgTemp, QObject *parent = 0);
 
     void populateFromTemplate();
 

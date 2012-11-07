@@ -579,6 +579,7 @@ void MainWindow::newBookOk()
     if( tmp->fromTemplate() )
     {
         pBook = new Book( tmp->bookTemplate() , tmp->languageTemplate(), tmp->fontFamily(), strPathToInkscape, strPathToGhostscript, this );
+        pBook->populateFromTemplate();
     }
     else
     {

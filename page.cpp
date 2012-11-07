@@ -14,12 +14,13 @@
 #include "textitem.h"
 #include "languagetemplate.h"
 #include "mainwindow.h"
+#include "booktemplate.h" // temporarily needed for debugging
 
-Page::Page(Book *pBook, LayoutTemplate *layoutTemplate, Book::Side s, LanguageTemplate *lgTemplate, QObject *parent) :
+Page::Page(Book *book, LayoutTemplate *layoutTemplate, Book::Side s, LanguageTemplate *lgTemp, QObject *parent) :
 	QGraphicsScene(parent)
 {
-    pBook = pBook;
-    lgTemplate = lgTemplate;
+    pBook = book;
+    lgTemplate = lgTemp;
     pageSide = s;
 
     pLayoutTemplate = layoutTemplate;
@@ -166,9 +167,9 @@ void Page::populateFromTemplate()
 	QPixmap pixmap;
 	pixmap = QPixmap::fromImage(QImage(":/resources/nopicture.png"));
         GraphicsItem *item = new GraphicsItem(this, pixmap, pLayoutTemplate->graphicsLayouts()->at(i));
-	this->addItem(item);
+        this->addItem(item);
 
-	aGraphics << item;
+        aGraphics << item;
     }
     for(int i=0; i<pLayoutTemplate->textblockLayouts()->count(); i++)
     {
@@ -291,11 +292,12 @@ void Page::setChanged(bool changed)
 {
     bChanged = changed;
     if(bChanged)
-        book()->setChanged(true);
+        pBook->setChanged(true);
 }
 
 void Page::addBackgroundImage()
 {
+/*
     qDebug() << "Page::addBackgroundImage()";
     QPixmap bg = pLayoutTemplate->backgroundImage();
     qDebug() << "Page::addBackgroundImage()";
@@ -309,4 +311,5 @@ void Page::addBackgroundImage()
     qDebug() << "Page::addBackgroundImage()";
     addItem(item);
     qDebug() << "Page::addBackgroundImage()";
+*/
 }

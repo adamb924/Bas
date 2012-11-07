@@ -102,9 +102,12 @@ public:
 
     inline LanguageTemplate* languageTemplate() const { return lgTemplate; }
 
+    void populateFromTemplate();
+
 private:
     //! \brief The pages of the book
     QList<Page*> aPages;
+
 
     QString strPathToInkscape;
     QString strPathToGhostscript;

@@ -27,7 +27,9 @@ PageControlWidget::PageControlWidget(Book *book, Page *page, QWidget *parent) :
     {
         layout->addWidget(bAdvancedOptions);
         bAdvancedOptions->menu()->addAction(tr("About this page"),this,SLOT(aboutThisPage()));
-        bAdvancedOptions->menu()->addMenu( templateMenu() );
+        QMenu *tMenu = templateMenu();
+        if(tMenu->actions().count() > 1)
+            bAdvancedOptions->menu()->addMenu( tMenu );
     }
 
     if( book->templateMode() == Book::BreakoutMode )

@@ -42,37 +42,6 @@ Book::Book(BookTemplate *bookTemplate, LanguageTemplate *lgtemplate, QString fon
     this->bkTemplate = bookTemplate;
     this->lgTemplate = lgtemplate;
 
-    // this is sort of redundant since there's a page count
-    // we just need to decide about numbering front and back matter
-    int pageCount = 0;
-
-    // add the front matter
-    for(int i=0; i<bookTemplate->frontMatter()->count(); i++)
-    {
-        Page *newPage = new Page( this , bookTemplate->frontMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
-	newPage->populateFromTemplate();
-	aPages << newPage;
-	pageCount++;
-    }
-
-    // add the middle matter
-    for(int i=0; i<bookTemplate->middleMatter()->count(); i++)
-    {
-        Page *newPage = new Page( this , bookTemplate->middleMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
-	newPage->populateFromTemplate();
-	aPages << newPage;
-	pageCount++;
-    }
-
-    // add the back matter
-    for(int i=0; i<bookTemplate->backMatter()->count(); i++)
-    {
-        Page *newPage = new Page( this , bookTemplate->backMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
-	newPage->populateFromTemplate();
-	aPages << newPage;
-	pageCount++;
-    }
-
     pPageTemplate = bookTemplate->pageTemplate();
     eTemplateMode = ConformityMode;
 
@@ -103,6 +72,40 @@ Book::Book(PageTemplate *pageTemplate, LanguageTemplate *lgtemplate, QString fon
 Book::~Book()
 {
     qDeleteAll(aPages.begin(), aPages.end());
+}
+
+void Book::populateFromTemplate()
+{
+    // this is sort of redundant since there's a page count
+    // we just need to decide about numbering front and back matter
+    int pageCount = 0;
+
+    // add the front matter
+    for(int i=0; i<bkTemplate->frontMatter()->count(); i++)
+    {
+        Page *newPage = new Page( this , bkTemplate->frontMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
+        newPage->populateFromTemplate();
+        aPages << newPage;
+        pageCount++;
+    }
+
+    // add the middle matter
+    for(int i=0; i<bkTemplate->middleMatter()->count(); i++)
+    {
+        Page *newPage = new Page( this , bkTemplate->middleMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
+        newPage->populateFromTemplate();
+        aPages << newPage;
+        pageCount++;
+    }
+
+    // add the back matter
+    for(int i=0; i<bkTemplate->backMatter()->count(); i++)
+    {
+        Page *newPage = new Page( this , bkTemplate->backMatter()->at(i), getPageSideFromPageNumber(pageCount), lgTemplate );
+        newPage->populateFromTemplate();
+        aPages << newPage;
+        pageCount++;
+    }
 }
 
 void Book::createPdf(QString filename)

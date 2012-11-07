@@ -25,7 +25,7 @@ TextItem::TextItem(Page *page, TextBlockLayoutItem *layoutItem, LanguageTemplate
 
     setTextInteractionFlags(Qt::TextEditorInteraction);
 
-    QFont fnt( page->book()->fontFamily() );
+    QFont fnt( pPage->book()->fontFamily() );
     fnt.setPixelSize( layoutItem->fontSize() );
     setFont( fnt );
 }

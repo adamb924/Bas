@@ -21,7 +21,6 @@ EditTemplateDialog::EditTemplateDialog(QList<AbstractTemplate*> *templates, NewT
         list->addItem( templates->at(i)->name() );
         stack->addWidget( templates->at(i)->createSettingsPage() );
         connect( templates->at(i) , SIGNAL(nameChanged(QString)) , this, SLOT(setCurrentText(QString)) );
-//        connect( templates->at(i) , SIGNAL(redoWidget()) , this, SLOT(redoCurrentWidget()) );
     }
 
     connect( list, SIGNAL(currentRowChanged(int)), stack, SLOT(setCurrentIndex(int)) );
